@@ -31,5 +31,8 @@ npm install
 ## Run project
 
 ```bash
-supervisor main.js
+node main.js 
+
+# or npm install -g supervisor
+# supervisor main.js
 ```
