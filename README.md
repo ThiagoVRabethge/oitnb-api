@@ -18,6 +18,16 @@ Movie recommender based on the emotions you want to feel
 git clone https://github.com/ThiagoVRabethge/oitnb-api
 ```
 
+## Add .env file
+
+```bash
+DIALECT="sqlite"
+
+STORAGE="path/to/your/sqlite/db"
+
+ORIGIN="http://your-host:your-port"
+```
+
 ## Install Dependencies
 
 ```bash
