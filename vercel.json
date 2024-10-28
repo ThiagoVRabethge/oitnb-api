@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "fastify-server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "fastify-server.js" }
+  ]
+}
