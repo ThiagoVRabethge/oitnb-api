@@ -6,13 +6,14 @@ import movieRoutes from './routes/movieRoutes.js';
 import seriesRoutes from './routes/seriesRoutes.js';
 import streamingRoutes from './routes/streamingRoutes.js';
 import syncAndSeedDatabase from './syncAndSeedDatabase.js';
+import "dotenv/config"
 
 const fastify = Fastify({ logger: true });
 
 setupAssociations();
 
 fastify.register(cors, {
-  origin: '*',
+  origin: process.env.ORIGIN,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 });
