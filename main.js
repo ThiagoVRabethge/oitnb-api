@@ -18,6 +18,10 @@ fastify.register(cors, {
   allowedHeaders: ['Content-Type', 'Authorization'],
 });
 
+fastify.get('/', async (request, reply) => {
+  return {"root": "endpoint"}
+})
+
 fastify.register(streamingRoutes);
 fastify.register(movieRoutes);
 fastify.register(seriesRoutes);
